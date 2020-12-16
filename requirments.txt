@@ -1,0 +1,20 @@
+Version 1
+[x] There should be a header section which containes all the navigation.
+
+Version 2
+[] There should be a banner section which containes the background images and all the other sub sections in it.
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+ 

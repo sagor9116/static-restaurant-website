@@ -1,0 +1,243 @@
+/* Globar Syles */
+
+*,
+* ::after,
+* ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-font: 'Source Sans Pro', sans-serif;
+  --secondary-font: 'Herr Von Muellerhoff', cursive;
+  --body-font : 'Cabin', sans-serif;
+  --main-font-color-dark: #252525;
+  --secondary-font-color: #c59d6f;
+  --body-font-color:#515151;
+}
+
+html {
+  font-family: var(--body-font);
+  font-size: 10px;
+  color: var(--body-font-color);
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 3.9rem 0;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 122.5rem;
+  margin: 0 auto;
+  padding: 0 2.4rem;
+}
+
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: -2px;
+}
+
+/* ======================
+     HEADER STARTS HERE
+========================= */
+
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.5),transparent); 
+}
+
+.nav {
+  height: 7.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-toggle {
+  color: #fff;
+  font-size: 2.2rem;
+  position: absolute;
+  top: 50%;
+  right: 2.5rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1500;
+}
+
+.nav-icon-times {
+  display: none;
+}
+
+.nav-list {
+  list-style-type: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100vh;
+  background-color: var(--main-font-color-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 4.4rem;
+  z-index: 1250;
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+}
+
+.nav::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.8);
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.5s;
+}
+
+/* these open class will be activated with javascript and its style STARTS here */
+.open .nav-icon-bars {
+  display: none;
+}
+
+.open .nav-icon-times {
+  display: block;
+}
+
+.open .nav-list {
+  transform: translateX(0);
+}
+
+.open .nav::before {
+  opacity: 1;
+  transform: scale(1);
+}
+/* these open class will be activated with javascript and its style ENDS here */
+
+.nav-item {
+  border-bottom: 2px solid rgba(255,255,255,0.3);
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: -2px;
+  transition: color .5s;
+}
+
+.nav-link:hover {
+  color: var(--secondary-font-color);
+}
+
+/* ======================
+     HERO STARTS HERE
+========================= */
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: url("images/hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.sub-headline {
+  font-size: 8.2rem;
+  font-family: var(--secondary-font);
+  letter-spacing: 2px;
+  font-weight: 200;
+  color: var(--secondary-font-color);
+  line-height: .6;
+}
+
+.first-letter {
+  font-size: 10rem;
+}
+
+.headline {
+  font-family: var(--main-font);
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+  margin-right: -.5rem;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  width: 100%;
+  max-width: 8.4rem;
+  height: .25rem;
+ background-color: #fff;
+ position: relative;
+}
+
+.asterisk {
+  color: var(--secondary-font-color);
+  font-size: 1.2rem;
+  margin: 0 1.6rem;
+}
+
+.headline-description h4 {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 100;
+  letter-spacing: 3px;
+  margin-right: -3px;
+  margin-bottom: 1.2rem;
+}
+
+.cta-btn {
+  background-color: #fff;
+  padding: 0.9rem 1.8rem;
+  font-size: 1.1rem;
+  color: var(--body-font-color);
+  border-radius: 0.4rem;
+  transition: background-color 0.5s;
+}
+
+.cta-btn:hover,
+.cta-btn:focus {
+  background-color: var(--secondary-font-color);
+  color: #fff;
+}
+
+
