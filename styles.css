@@ -203,9 +203,9 @@ header {
 }
 
 .line {
-  width: 100%;
-  max-width: 8.4rem;
-  height: .25rem;
+ width: 100%;
+ max-width: 8.4rem;
+ height: .25rem;
  background-color: #fff;
  position: relative;
 }
@@ -239,5 +239,81 @@ header {
   background-color: var(--secondary-font-color);
   color: #fff;
 }
+
+/* ======================
+     OUR-STORY STARTS HERE
+========================= */
+
+.global-headline {
+  margin-top: 3.9rem;
+  text-align: center;
+}
+
+.our-story .global-headline {
+  margin-top: 6.9rem;
+}
+
+.global-headline .sub-headline {
+  letter-spacing: -1px;
+  line-height: .42;
+}
+
+.headline-dark {
+  color: var(--main-font-color-dark);
+  letter-spacing: .7rem;
+  margin-right: -.7rem;
+}
+
+.restaurant-info {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.restaurant-info > div {
+  flex: 1;
+}
+
+.padding-right {
+  padding-right: 7rem;
+}
+
+.restaurant-description {
+  margin-bottom: 3rem;
+}
+
+.restaurant-description p {
+  line-height: 1.6;
+  margin-bottom: 2.4rem;
+}
+
+.body-btn{
+  font-size: 1.5rem;
+  color: var(--secondary-font-color);
+  position: relative;
+  transition: color .5s;
+}
+
+.body-btn::before {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: var(--secondary-font-color);
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  transition: background-color .5s;
+}
+
+.body-btn:hover,
+.body-btn:focus {
+  color: var(--main-font-color-dark);
+}
+
+.body-btn:hover::before,
+.body-btn:focus::before {
+  background-color: var(--main-font-color-dark);
+}
+
 
 
