@@ -315,5 +315,21 @@ header {
   background-color: var(--main-font-color-dark);
 }
 
+/* ==========================
+TASTEFUL-RECIPIES STARTS HERE
+============================= */
+
+.tastefull-recipies {
+  background: url(/images/tasteful.jfif) center no-repeat;
+  background-size: cover;
+}
+
+.between {
+  height: 65vh;
+  display: flex;
+  align-items: center;
+}
+
+
 
 
