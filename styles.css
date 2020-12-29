@@ -353,6 +353,102 @@ TASTEFUL-RECIPIES STARTS HERE
   background-size: cover;
 }
 
+/* ==========================
+      FOOTER  STARTS HERE
+============================= */
+
+footer {
+  padding: 7.9rem 0;
+  background-color: #121212;
+  color: #fff;
+  position: relative;
+  text-align: center;
+}
+
+.back-to-top {
+  width: 7rem;
+  height: 7rem;
+  background-color: #121212;
+  position: absolute;
+  top: -3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+
+.back-to-top i {
+  display: block;
+  color: #fff;
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+.footer-content {
+  /* overflow: hidden; */
+}
+
+.footer-content-info  h4{
+   font-size: 1.9rem;
+   text-transform: uppercase;
+   font-weight: 100;
+   letter-spacing: 3px;
+   margin-bottom: 3rem;
+}
+
+.footer-content-info p {
+  line-height: 2;
+}
+
+.social-media {
+/* padding: 2rem; */
+}
+
+.social-icons {
+  list-style-type: none;
+  margin-bottom: 3.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons i {
+  font-size: 2rem;
+  padding: .8rem 2rem;
+  color: #fff;
+  opacity: .5;
+  transition: color .5s;
+}
+
+.social-icons i:hover {
+  color: var(--secondary-font-color);
+}
+
+.newsletter-form {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter-input {
+  width: 100%;
+  max-width: 25rem;
+  padding: 1rem;
+  border-radius: .4rem;
+}
+
+.newsletter-btn {
+  background-color: transparent;
+  border: none;
+  color: var(--main-font-color-dark);
+  font-size: 1.6rem;
+  padding: 1px .6rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 10.5rem;
+}
+
+
 
 
 
